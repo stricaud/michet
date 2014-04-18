@@ -1,12 +1,12 @@
 include_directories(AFTER ${MICHET_INCLUDE_DIRS})
 
 set(MICHET_SRC_FILES
-michet.c
+mic.c
 )
 
 set(MICHET_LINK_LIBRARIES
-#${MICHET_LIBRARY}
+${MICHET_LIBRARY}
 )
 
-add_executable(michet ${MICHET_SRC_FILES})
-target_link_libraries(michet ${MICHET_LINK_LIBRARIES})
+add_executable(mic ${MICHET_SRC_FILES})
+target_link_libraries(mic ${MICHET_LINK_LIBRARIES})

@@ -15,5 +15,6 @@ Remove the CMakeCache.txt file and try again from another folder, e.g.:
 endif()
 
 set(MICHET_INCLUDE_DIRS "${michet-project_SOURCE_DIR}/src/lib/include/" "${michet-project_BINARY_DIR}/src/lib/include")
+set(MICHET_LIBRARY "${michet-project_BINARY_DIR}/src/lib/libmichet.so")
 
 add_subdirectory(src)
