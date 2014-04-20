@@ -19,7 +19,7 @@ michet_t *michet_init(char *output_file)
 
 void michet_terminate(michet_t *michet)
 {
-  chmod(michet->filename, S_IXUSR | S_IXGRP | S_IXOTH);
+  chmod(michet->filename, S_IXUSR | S_IXGRP | S_IXOTH | S_IXUSR | S_IXGRP | S_IXOTH | S_IWUSR);
   fclose(michet->fp);
   free(michet);
 }

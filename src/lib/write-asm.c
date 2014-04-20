@@ -36,12 +36,8 @@ int get_addr_from_pos(int pos)
   return address;
 }
 
-
-void write_print(michet_t *michet, char *text_to_print, size_t len)
+void write_elf(michet_t *michet)
 {
-  FILE *fd;
-  uint8_t instruction;
-
   // ELF Magic
   write_32(michet->fp, 0x464c457f);
   write_32(michet->fp, 0x00010101);
@@ -86,6 +82,11 @@ void write_print(michet_t *michet, char *text_to_print, size_t len)
   write_32(michet->fp, 0x00000000);
   write_32(michet->fp, 0x00000000);
   write_32(michet->fp, 0x00000000);
+}
+
+void write_print(michet_t *michet, char *text_to_print, size_t len)
+{
+  uint8_t instruction;
 
   // mov edx, len
   write_instruction(michet->fp, MOV+EDX);

@@ -11,6 +11,7 @@ int main(int argc, char **argv)
 
   michet = michet_init(argv[2]);
 
+  write_elf(michet);
   write_print(michet, "Simple test!\n", 13);
 
   michet_terminate(michet);
