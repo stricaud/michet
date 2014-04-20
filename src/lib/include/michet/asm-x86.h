@@ -8,6 +8,7 @@
 #define MOV 0xB0
 #define INT 0xCD
 #define JMP 0xEB
+#define RET 0xC3
 
 // Registers
 #define EAX 0x08
