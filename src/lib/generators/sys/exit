@@ -1,4 +1,4 @@
-#exit(%__INT__%)
+prototype:exit(%__INT__%)
 mov eax, 1
 mov ebx, %__INT__%
 int 0x80

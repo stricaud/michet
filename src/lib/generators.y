@@ -61,6 +61,9 @@ asmcode: TOK_WORD TOK_WORD TOK_COMMA TOK_WORD { /* mov ebx, eax */
         | TOK_WORD TOK_WORD {
 	  printf("Putting %s into %s\n", $2, $1);
 	}
+        | TOK_WORD {
+	  printf("Calling %s\n", $1);
+	}
         ;
 
 %%
