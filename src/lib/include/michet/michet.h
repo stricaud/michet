@@ -11,6 +11,7 @@ struct _michet_t {
 
 michet_t *michet_init(char *output_file);
 void michet_terminate(michet_t *michet);
+int michet_parse_generator(char *genfile);
 
 #endif	/* _MICHET_MICHET_H_ */
 
