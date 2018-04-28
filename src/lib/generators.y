@@ -88,6 +88,8 @@ int michet_parse_generator(char *genfile)
 
   state = generators_scan_string(fbuf);
   generatorsparse();
+
+  free(fbuf);
   
   return 0;
 }
