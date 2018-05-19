@@ -1,1 +1,5 @@
-**Michet** is a minimalist compiler for x86 platforms
+**Michet** is a minimalist compiler for Linux/x86_64 platforms only.
+
+It uses generators to write code for each functions, allowing some kind of ASM scripting :)
+
+
