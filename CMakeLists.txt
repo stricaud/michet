@@ -25,7 +25,7 @@ configure_file("src/lib/include/michet/version.h.cmake" "src/lib/include/michet/
 
 message("Install Prefix:" ${CMAKE_INSTALL_PREFIX})
 message("Lib Prefix:" ${CMAKE_SHARED_LIBRARY_PREFIX})
-file(TO_NATIVE_PATH "${CMAKE_INSTALL_PREFIX}/${CMAKE_SHARED_LIBRARY_PREFIX}/michet-${VERSION}/generators/" GENERATORS_DIR)
+file(TO_NATIVE_PATH "${CMAKE_INSTALL_PREFIX}/${CMAKE_SHARED_LIBRARY_PREFIX}/michet-${VERSION}/generators/x86_64/" GENERATORS_DIR)
 message("Generators dir:" ${GENERATORS_DIR})
 
 set(MICHET_INCLUDE_DIRS "${michet-project_SOURCE_DIR}/src/lib/include/" "${michet-project_BINARY_DIR}/src/lib/include")
