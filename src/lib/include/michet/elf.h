@@ -52,6 +52,7 @@ typedef uint32_t Elf64_Word;
 #define EM_88K   5 // Motorola 88000
 #define EM_860   6 // Intel 80860
 #define EM_MIPS  8 // MIPS RS3000
+#define EM_AMD64 62
 
 /* special section indices */
 #define SHN_UNDEF 0

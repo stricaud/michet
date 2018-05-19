@@ -21,7 +21,7 @@ int michet_write_elf_header(michet_t *michet)
   elf64_header.e_ident[EI_OSABI] = ELFOSABI_SYSV;
   elf64_header.e_ident[EI_ABIVERSION] = ELFOSABI_SYSV;
   elf64_header.e_type = ET_EXEC;
-  elf64_header.e_machine = EM_386;
+  elf64_header.e_machine = EM_AMD64;
   elf64_header.e_version = EV_CURRENT;
   elf64_header.e_entry = 0;	/* virtual address of the program entry point */
   elf64_header.e_phoff = 0;	/* file offset in bytes of the program header table */
