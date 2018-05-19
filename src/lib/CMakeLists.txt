@@ -8,6 +8,7 @@ add_flex_bison_dependency(generatorscanner generatorparser)
 
 set(LIBMICHET_SRC_FILES
   tp/xxHash/xxhash.c  
+  elf.c
   michet.c
   utils.c
   write-asm.c

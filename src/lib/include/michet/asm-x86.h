@@ -3,8 +3,6 @@
 
 
 //  The opcodes being used by michet
-
-
 #define MOV 0xB0
 #define INT 0xCD
 #define JMP 0xEB

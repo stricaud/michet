@@ -6,6 +6,7 @@
 typedef struct _michet_t michet_t;
 struct _michet_t {
   const char *filename;
+  size_t offset;
   FILE *fp;
 };
 
